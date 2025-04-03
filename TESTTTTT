@@ -183,35 +183,7 @@ document.getElementById("addGameForm").addEventListener("submit", function (e) {
     document.getElementById("gameTime").value = "";
 });
 
-// Event listener for adding new schedule events
-document.getElementById("addScheduleForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const eventName = document.getElementById("eventName").value;
-    const eventTime = document.getElementById("eventTime").value;
-
-    playerData.schedule.push({
-        eventName: eventName,
-        eventTime: eventTime
-    });
-
-    saveData();
-    displaySchedule();
-
-    document.getElementById("eventName").value = "";
-    document.getElementById("eventTime").value = "";
-});
-
-// Event listener for reset button
-document.getElementById("resetButton").addEventListener("click", resetData);
-
-// Initialize UI on load
-window.onload = function () {
-    displayGamingTime();
-    displaySchedule();
-};
-
-    </script>
+</script>
 
 </body>
 </html>
