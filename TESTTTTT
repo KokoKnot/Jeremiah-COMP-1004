@@ -161,27 +161,7 @@ function resetData() {
     countdownIntervals = []; // Reset timer storage
 
     alert("All data has been cleared!");
-}
-
-// Event listener for adding new games
-document.getElementById("addGameForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const gameName = document.getElementById("gameName").value;
-    const gameTime = document.getElementById("gameTime").value;
-
-    playerData.games.push({
-        gameName: gameName,
-        totalTimeSpent: gameTime,
-        timeLeft: parseInt(gameTime) * 60 * 60 // Convert hours to seconds
-    });
-
-    saveData();
-    displayGamingTime();
-
-    document.getElementById("gameName").value = "";
-    document.getElementById("gameTime").value = "";
-});
+};
 
 </script>
 
