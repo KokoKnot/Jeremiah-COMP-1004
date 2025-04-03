@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Initialize HTML structure with metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTime Assistant</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>GameTime Assistant</h1>
+    </header>
+
+    <!-- Add Game Form Section -->
+    <section id="addGameSection">
+        <h2>Add a Game</h2>
+        <form id="addGameForm">
+            <label for="gameName">Game Name:</label>
+            <input type="text" id="gameName" placeholder="Enter game name" required>
+            
+            <label for="gameTime">Time Spent:</label>
+            <input type="text" id="gameTime" placeholder="e.g., 2 hours" required>
+            
+            <button type="submit">Add Game</button>
+        </form>
+    </section>
+    
+    <!-- Add to Schedule Section -->
+    <section id="addScheduleSection">
+        <h2>Add to Schedule</h2>
+        <form id="addScheduleForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" placeholder="Enter event name" required>
+            
+            <label for="eventTime">Event Time:</label>
+            <input type="datetime-local" id="eventTime" required>
+            
+            <button type="submit">Add Event</button>
+        </form>
+    </section>
+    
+    <!-- Display Game Time Section -->
+    <section>
+        <h2>Gaming Time</h2>
+        <ul id="gameTimeList"></ul>
+    </section>
+
+    <!-- Display Time Left Countdown Section -->
+    <section>
+        <h2>Time Left</h2>
+        <ul id="countdownList"></ul>
+    </section>
+    
+    <!-- Display Schedule Section -->
+    <section>
+        <h2>Schedule</h2>
+        <ul id="scheduleList"></ul>
+    </section>
+    
+    <!-- Reset Button Section -->
+    <section>
+        <button id="resetButton">Reset Data</button>
+    </section>
+
+</body>
+</html>
